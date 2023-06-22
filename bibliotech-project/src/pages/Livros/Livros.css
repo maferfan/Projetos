@@ -1,0 +1,32 @@
+td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+th, td, tr{
+    text-align: center;
+    width: 280px;
+    font-family: monospace;
+}
+
+.titulo-listview{
+    font-size: 20px;
+    color: rgb(28, 97, 68);
+}
+
+th{
+    font-size: 25px;
+}
+
+td{
+    padding: 25px 0;
+}
+
+td img {
+    height: 230px;
+    width: 75%;
+}
+
+.livros{
+    margin: 0 0 300px 0;
+}

@@ -1,0 +1,28 @@
+
+.d-flex.justify-content-center.align-items-center {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    margin: 50px;
+    width: 400px;
+    height: 300px;
+    transition: transform 0.7s;
+    transform-origin: center;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  .card {
+    transform: scale(1.1);
+  }
+ 

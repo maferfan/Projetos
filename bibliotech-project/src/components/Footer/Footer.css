@@ -1,0 +1,48 @@
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #282828;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    
+}
+
+.footer2 {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0b0a0a;
+    color: #f2efef;
+    text-align: center;
+}
+
+.footer{
+    margin: 20px 0 0 0;
+}
+
+.inicio, .sobre-nós{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    gap: 0;
+}
+
+h5{
+    color: white;
+    font-weight: bold;
+}
+
+p{
+    color: #757474;
+}
+
+button{
+    background-color: #a4a4a4;
+}

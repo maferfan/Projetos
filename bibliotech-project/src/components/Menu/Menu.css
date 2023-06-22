@@ -1,0 +1,33 @@
+body.light-theme {
+    background-color: #ffffff;
+    color: #383737;
+}
+
+body.dark-theme {
+    background-color: #383737;
+    color: #ffffff;
+}
+
+.dark-theme .offcanvas-body {
+    background-color: #383737;
+}
+
+.light-theme .offcanvas-body {
+    background-color: #ffffff;
+}
+
+.dark-theme .offcanvas {
+    background-color: #383737;
+}
+
+.light-theme .offcanvas {
+    background-color: #ffffff;
+}
+
+.botaoTema {
+    border: none;
+}
+
+.navbar {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.475);
+  }

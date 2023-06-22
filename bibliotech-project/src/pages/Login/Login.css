@@ -1,0 +1,52 @@
+.container-login {
+    font-family: monospace;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(113, 224, 113), black);
+    color: beige;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+    width: 25%;
+    box-shadow: 1px 2px 2px black;
+}
+
+.img,
+.button {
+    border-radius: 100%;
+}
+
+.button:hover, .icon:hover{
+    background-color: rgb(194, 194, 191);
+    border-radius: 100%;
+    opacity: 0.3;
+    transition: opacity 0.4s;
+}
+
+.button:active, .icon:active{
+    box-decoration-break: none;
+}
+
+
+.btn-entrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.show-password-btn {
+    position: absolute;
+    top: 73%;
+    right: 0;
+    transform: translate(0, -50%);
+}

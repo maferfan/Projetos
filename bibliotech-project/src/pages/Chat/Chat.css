@@ -1,0 +1,108 @@
+/* Estilo geral do chat */
+.chat-container {
+  margin: 10px auto;
+  max-width: 800px;
+  height: 500px;
+  border: 1px solid #cccccc7c;
+  box-shadow: 0 0 10px rgba(194, 194, 194, 0.434);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+/* Estilo do scrollbar */
+.chat-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background: #198754;
+  border-radius: 6px;
+  position: start;
+}
+
+/* Estilo da seção de mensagens */
+.message-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* Estilo de cada mensagem */
+.message {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.received {
+  flex-direction: row;
+}
+
+.message img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message p {
+  max-width: 70%;
+  background: #2d2d2d;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  word-break: break-word;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.sent p {
+  background: #198754;
+  color: #fff;
+  align-self: flex-end;
+}
+
+/* Estilo do formulário de envio de mensagem */
+.message-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #fff;
+}
+
+.message-input input {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px ;
+  font-size: 16px;
+}
+
+.message-input button {
+  padding: 10px 20px;
+  background: #198754;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.message-input button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

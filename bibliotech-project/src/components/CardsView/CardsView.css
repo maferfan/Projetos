@@ -1,0 +1,11 @@
+.card-body-cardsview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
+.img-cardsview{
+    width: 250px;
+    height: 350px;
+}
