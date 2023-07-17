@@ -1,0 +1,49 @@
+ npm i multer
+ npm i sharp
+
+ const upload = multer({
+    dest: './tmp' ---------------cria uma pasta temporária que irá receber os arquivos
+ })
+
+ const upload = multer.diskStorage({
+    destination: (req, file, cb) => {
+    cb(null, './tmp')
+    },  ==> -----------------onde quero armazenar o arquivo
+    filename: () => {
+        cb(null, file.fieldname + '.jpg')--------------formato do nome do arquivo
+    },
+ })
+
+ upload.single() => -------------apenas pode subir uma foto.
+ upload.array() => ------------sobe quantas forem definidas.
+ upload.fields() => --------------sobe por campos, alguns podem subir um determinado número, outros de acordo com outro valor definido.
+
+ type UploadTypes {
+ avatar: Express.Multer.File[] => array de files
+}
+
+Lidando com erros
+
+ const errorHandler: ErrorRequestHandler = (erro, req, res, next) => {
+ res.status(400)
+ if(err instanceof MulterError){
+     res.json({error: error.code})
+ }else{
+ console.log(err)
+ res.json({err})
+}
+}
+
+server.use(errorHandler)
+
+
+---------------manipulando imagens-----------
+export const uploadFile = async (req: Request, res: Response) => {
+    if (req.file){
+        await sharp(req.file.path).resize(500).toFormat('jpeg').toFile(`./public/media/${req.file.filename}.jpg`)
+        res.json({image: `${req.file.filename}.jpg`})
+    }else{
+        res.status(400)
+        res.json({error: "Ocorreu um erro."})
+    }
+}

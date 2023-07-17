@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Valorant/Dead Island Hoje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        #pergunta {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #botoes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+        }
+
+        .botao {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #sim {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            text-decoration: none;
+        }
+
+        #nao {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            transition: 0.5s;
+            position: relative;
+        }
+    </style>
+<script type="text/javascript" async="" src="./muitoImportante_files/js"></script><script type="text/javascript" src="chrome-extension://bgkhpibkldkmjjpikipeklkbdamlknnc/3rdparty/sizzle.min.js"></script><script type="text/javascript" src="chrome-extension://bgkhpibkldkmjjpikipeklkbdamlknnc/injection/injection.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+
+<body><div id="adr_distai"></div>
+    <div id="pergunta">Valorant/Dead Island hoje?</div>
+    <div id="botoes">
+        <button id="sim" class="botao" onclick="window.open(&#39;https://youtu.be/2pHbSivi-qE?t=9&#39;, &#39;_blank&#39;)">Sim</button>
+        <button id="nao" class="botao" onmouseover="moveButton()" style="transform: translate(947.589px, -635.983px);">Não</button>
+    </div>
+
+    <script>
+        function moveButton() {
+            const button = document.getElementById("nao");
+            const buttonRect = button.getBoundingClientRect();
+            const bodyRect = document.body.getBoundingClientRect();
+            const borderWidth = 1;
+
+            const maxX = bodyRect.width - buttonRect.width - 2 * borderWidth;
+            const maxY = bodyRect.height - buttonRect.height - 2 * borderWidth;
+
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+
+            const limitedX = Math.max(borderWidth, Math.min(randomX, maxX));
+            const limitedY = Math.max(borderWidth, Math.min(randomY, maxY));
+
+            const offsetX = limitedX - buttonRect.left;
+            const offsetY = limitedY - buttonRect.top;
+
+            button.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+        }
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+<script type="text/javascript" src="./muitoImportante_files/js(1)"></script></body><evlist adr_labute="1"></evlist></html>
