@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/bibliotech/static/css/main.720cc2f3.css",
+    "main.js": "/bibliotech/static/js/main.61052a61.js",
+    "static/media/login.png": "/bibliotech/static/media/login.cbc9af2ac309dd43be3b.png",
+    "static/media/livros.png": "/bibliotech/static/media/livros.0cdc164d4436b2e160f1.png",
+    "static/media/github.svg": "/bibliotech/static/media/github.4a17b2e629dd6032a84bf6166cd57728.svg",
+    "static/media/google-white.svg": "/bibliotech/static/media/google-white.52175ba3ed59110fef8c410517ccd2f4.svg",
+    "index.html": "/bibliotech/index.html",
+    "static/media/face.svg": "/bibliotech/static/media/face.9c83509febcb6d87d802cfa2f38fa4d6.svg",
+    "main.720cc2f3.css.map": "/bibliotech/static/css/main.720cc2f3.css.map",
+    "main.61052a61.js.map": "/bibliotech/static/js/main.61052a61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.720cc2f3.css",
+    "static/js/main.61052a61.js"
+  ]
+}
